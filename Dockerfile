@@ -7,6 +7,8 @@ RUN pip install --no-cache-dir --requirement requirements.txt
 # Install utility so we can easily use docker secrets in local_settings.py
 RUN pip install --no-cache-dir get-docker-secret
 
+RUN pip install --no-cache-dir uwsgitop
+
 # Copy app
 COPY . .
 
